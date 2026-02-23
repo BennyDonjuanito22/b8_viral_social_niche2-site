@@ -1,211 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitSnap - Micro-habit clips that build audiences and sell programs. No</title>
-    <meta name="description" content="Short-form fitness and wellness content templates — viral clip packs, workout scripts, and micro-habit challenges designed for TikTok/Reels/Shorts cre">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #1a202c;
-            background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            color: white;
-        }
-        .badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.25);
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 14px;
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
-            font-weight: 600;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            font-weight: 900;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            line-height: 1.2;
-        }
-        .subtitle {
-            font-size: 1.4em;
-            margin-bottom: 40px;
-            opacity: 0.95;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: 400;
-        }
-        .cta-primary {
-            display: inline-block;
-            background: white;
-            color: #6366F1;
-            padding: 18px 45px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: 700;
-            transition: all 0.3s;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-        }
-        .cta-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 30px rgba(0,0,0,0.3);
-        }
-        .content-section {
-            background: white;
-            border-radius: 12px;
-            padding: 60px 40px;
-            margin: 40px 0;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-        h2 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-            color: #2d3748;
-            text-align: center;
-            font-weight: 800;
-        }
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-        .feature-card {
-            background: #F7FAFC;
-            padding: 30px;
-            border-radius: 8px;
-            border-left: 4px solid #6366F1;
-        }
-        .feature-card h3 {
-            color: #6366F1;
-            font-size: 1.4em;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-        .feature-card p {
-            color: #4A5568;
-            font-size: 1.05em;
-            line-height: 1.7;
-        }
-        .deliverables-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-        .deliverable-item {
-            display: flex;
-            align-items: start;
-            padding: 20px;
-            background: #F7FAFC;
-            border-radius: 8px;
-        }
-        .deliverable-item::before {
-            content: "✓";
-            color: #6366F1;
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-right: 15px;
-        }
-        .pricing-section {
-            text-align: center;
-            padding: 40px 20px;
-        }
-        .price {
-            font-size: 3em;
-            font-weight: 900;
-            color: #6366F1;
-            margin: 20px 0;
-        }
-        .guarantee-box {
-            background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
-            border: 2px solid #10B981;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 40px 0;
-            text-align: center;
-        }
-        .guarantee-box h3 {
-            color: #059669;
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-        .guarantee-box p {
-            font-size: 1.15em;
-            color: #065F46;
-            line-height: 1.7;
-        }
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: white;
-            background: rgba(0,0,0,0.2);
-            border-radius: 12px;
-            margin-top: 40px;
-        }
-        @media (max-width: 768px) {
-            h1 { font-size: 2em; }
-            .subtitle { font-size: 1.1em; }
-            .features-grid { grid-template-columns: 1fr; }
-        }
-    </style>
-<!-- Google Analytics (GA4) - Measurement ID to be set by Kiki via KIKI-G11 -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitSnap — Viral Fitness Content That Converts</title>
+    <meta name="description" content="FitSnap: Micro-habit clips that build audiences and sell programs. Fitness clip templates, workout scripts, and challenge frameworks for TikTok, Reels, and Shorts." />
+    <link rel="stylesheet" href="styles.css" />
+  <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="badge">Instant digital delivery</div>
-            <h1>FitSnap — Viral Fitness Content That Converts</h1>
-            <p class="subtitle">Micro-habit clips that build audiences and sell programs. No gym required.</p>
-            <a href="https://asinetwork.gumroad.com" class="cta-primary">Get the Fitness Clip Kit</a>
-        </header>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">FitSnap</a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
 
-        <div class="content-section">
-            <h2>What You Get</h2>
-            <div class="deliverables-list"><div class="deliverable-item">50 fitness clip templates</div><div class="deliverable-item">30-day micro-habit challenge framework</div><div class="deliverable-item">AI voiceover scripts for wellness content</div><div class="deliverable-item">Hook library (150+ fitness hooks)</div><div class="deliverable-item">Monetization playbook (affiliate + digital products)</div></div>
+    <main class="container">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="badge">Instant Digital Delivery</div>
+        <h1>Viral Fitness Content <span>That Converts</span></h1>
+        <p class="lead">Micro-habit clips that build audiences and sell programs. No gym required. 50 fitness templates, challenge frameworks, and a monetization playbook.</p>
+        <div class="cta-row">
+          <a class="button primary" href="#pricing">Get the Fitness Clip Kit</a>
+          <a class="button secondary" href="#features">See What's Inside</a>
         </div>
+      </section>
 
-        <div class="content-section"><h2>Common Challenges We Solve</h2><div class="features-grid"><div class="feature-card"><h3>Problem</h3><p>Posting daily is exhausting</p></div><div class="feature-card"><h3>Problem</h3><p>Content doesn't lead to program sales</p></div><div class="feature-card"><h3>Problem</h3><p>Can't compete with big fitness accounts</p></div></div></div>
-
-        <div class="content-section pricing-section">
-            <h2>Investment</h2>
-            <div class="price">$27</div>
-            <p style="font-size:1.2em; color:#718096; margin:20px 0;">Professional solution, transparent pricing</p>
-            <a href="https://asinetwork.gumroad.com" class="cta-primary">Get the Fitness Clip Kit</a>
+      <!-- Pain Points -->
+      <section class="section" id="problem">
+        <div class="section-header">
+          <h2>The Fitness Creator Struggle</h2>
+          <p>Growing a fitness brand on social shouldn't feel impossible.</p>
         </div>
+        <div class="grid">
+          <div class="card">
+            <h3>Posting Daily Is Exhausting</h3>
+            <p>You love fitness, not content production. But the algorithm demands consistency.</p>
+          </div>
+          <div class="card">
+            <h3>Content Doesn't Lead to Sales</h3>
+            <p>Views don't pay the bills. Your clips need to convert to program sales and coaching signups.</p>
+          </div>
+          <div class="card">
+            <h3>Can't Compete with Big Accounts</h3>
+            <p>You don't need a million followers — you need better systems and templates.</p>
+          </div>
+        </div>
+      </section>
 
-        <div class="guarantee-box"><h3>💯 Our Guarantee</h3><p>30-day money-back guarantee</p></div>
+      <!-- Features / Deliverables -->
+      <section class="section" id="features">
+        <div class="section-header">
+          <h2>Everything in the Kit</h2>
+          <p>A complete content system for fitness creators who want to grow and monetize.</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>50 Fitness Clip Templates</h3>
+            <p>Proven fitness formats — transformation reveals, form checks, myth busters, and more.</p>
+          </div>
+          <div class="card">
+            <h3>30-Day Micro-Habit Challenge</h3>
+            <p>A complete challenge framework your audience can follow — builds community and engagement.</p>
+          </div>
+          <div class="card">
+            <h3>AI Voiceover Scripts</h3>
+            <p>Wellness-focused scripts optimized for watch time. Just record and post.</p>
+          </div>
+          <div class="card">
+            <h3>150+ Fitness Hooks</h3>
+            <p>Stop-the-scroll openers tested across fitness niches. "This 2-minute habit changed my body."</p>
+          </div>
+          <div class="card">
+            <h3>Monetization Playbook</h3>
+            <p>Turn followers into revenue with affiliate strategies, digital products, and coaching funnels.</p>
+          </div>
+          <div class="card">
+            <h3>Batch Creation System</h3>
+            <p>Create 30 fitness clips in 1 hour using our AI-powered batch workflow.</p>
+          </div>
+        </div>
+      </section>
 
-        <footer>
-            <p>&copy; 2026 FitSnap. All rights reserved.</p>
-            <p style="margin-top:10px; opacity:0.8;">Powered by ASI Network</p>
-        </footer>
-    </div>
+      <!-- Social Proof -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Built for Fitness Creators</h2>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>"This 2-minute habit changed my body in 30 days"</h3>
+            <p>Micro-habit content is the fastest-growing fitness format on TikTok right now.</p>
+          </div>
+          <div class="card">
+            <h3>"I batch 30 fitness clips in 1 hour with AI"</h3>
+            <p>Stop spending all day on content. Our system lets you create a month of posts in one session.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="section" id="pricing">
+        <div class="section-header">
+          <h2>Pick Your Kit</h2>
+          <p>One-time purchase. Instant delivery. 30-day money-back guarantee.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h3>Starter</h3>
+            <div class="price-amount">$27</div>
+            <ul>
+              <li>20 fitness clip templates</li>
+              <li>50 hooks</li>
+              <li>Basic posting schedule</li>
+              <li>AI voiceover scripts</li>
+            </ul>
+            <a class="button primary" href="#">Get Starter</a>
+          </div>
+          <div class="price-card featured">
+            <h3>Pro</h3>
+            <div class="price-amount">$67</div>
+            <ul>
+              <li>50 fitness clip templates</li>
+              <li>150+ hook library</li>
+              <li>30-day micro-habit challenge</li>
+              <li>AI voiceover scripts</li>
+              <li>Monetization playbook</li>
+              <li>Batch creation system</li>
+            </ul>
+            <a class="button primary" href="#">Get Pro</a>
+          </div>
+          <div class="price-card">
+            <h3>Coach Bundle</h3>
+            <div class="price-amount">$197</div>
+            <ul>
+              <li>Everything in Pro</li>
+              <li>Coaching funnel templates</li>
+              <li>Client onboarding system</li>
+              <li>White-label challenge kit</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="button primary" href="#">Get Coach Bundle</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>What fitness niche is this for?</h3>
+            <p>Micro-habits and wellness — works for personal trainers, yoga, home workouts, running, and more.</p>
+          </div>
+          <div class="card">
+            <h3>Do I need to be on camera?</h3>
+            <p>Not required. Many templates work with AI voiceover, text overlays, or stock B-roll.</p>
+          </div>
+          <div class="card">
+            <h3>Will this work if I'm just starting?</h3>
+            <p>Absolutely. The templates are designed to help new creators look professional from day one.</p>
+          </div>
+          <div class="card">
+            <h3>Is there a refund policy?</h3>
+            <p>Yes — 30-day money-back guarantee, no questions asked.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Strip -->
+      <section class="section" style="text-align:center; border-bottom: none;">
+        <h2>Start Creating Viral Fitness Content</h2>
+        <p class="lead" style="margin-top: 12px;">Join the fitness creators using AI to grow faster and monetize smarter.</p>
+        <div class="cta-row" style="margin-top: 20px;">
+          <a class="button primary" href="#pricing">Get the Fitness Clip Kit</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>FitSnap</strong>
+          <div class="muted">&copy; 2026 FitSnap. All rights reserved.</div>
+        </div>
+        <div class="footer-links">
+          <a href="#pricing">Pricing</a>
+          <a href="#features">Features</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+    </footer>
+  <script src="cookie-consent.js"></script>
 </body>
 </html>
